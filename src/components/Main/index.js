@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Textfield from "@atlaskit/textfield";
-import Button from "@atlaskit/button";
+
+import Button from "../Shared/Button";
 
 const Container = styled.main`
   display: flex;

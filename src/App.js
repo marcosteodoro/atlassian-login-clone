@@ -1,11 +1,11 @@
 import React from "react";
-import "@atlaskit/css-reset";
-import Button from "@atlaskit/button";
 import styled from "styled-components";
+import "@atlaskit/css-reset";
 
 import Header from "../src/components/Header";
 import Main from "../src/components/Main";
 import Footer from "../src/components/Footer";
+import Button from "../src/components/Shared/Button";
 
 const Container = styled.div`
   display: flex;
