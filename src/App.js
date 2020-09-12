@@ -1,26 +1,26 @@
 import React from "react";
 import "@atlaskit/css-reset";
 import Button from "@atlaskit/button";
+import styled from "styled-components";
 
 import Header from "../src/components/Header";
 import Main from "../src/components/Main";
 import Footer from "../src/components/Footer";
 
-function App() {
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+`;
+
+export default () => {
   return (
-    <div
-      className="App"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
-        justifyContent: "space-between",
-      }}
-    >
+    <Container>
       <div>
         <Header />
         <Main />
-        
+
         <ul
           style={{
             display: "flex",
@@ -51,8 +51,6 @@ function App() {
         </ul>
       </div>
       <Footer />
-    </div>
+    </Container>
   );
-}
-
-export default App;
+};
