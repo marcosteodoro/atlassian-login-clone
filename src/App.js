@@ -1,24 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "@atlaskit/css-reset";
+import Button from "@atlaskit/button";
+
+import Header from "../src/components/Header";
+import Main from "../src/components/Main";
+import Footer from "../src/components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div
+      className="App"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        justifyContent: "space-between",
+      }}
+    >
+      <div>
+        <Header />
+        <Main />
+        
+        <ul
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            listStyle: "outside none none",
+            padding: "0px",
+            alignItems: "center",
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <li>
+            <Button
+              style={{ fontSize: "12px" }}
+              appearance="link"
+              spacing="compact"
+            >
+              Política de Privacidade
+            </Button>
+          </li>
+          <li>
+            <Button
+              style={{ fontSize: "12px" }}
+              appearance="link"
+              spacing="compact"
+            >
+              Aviso ao usuário
+            </Button>
+          </li>
+        </ul>
+      </div>
+      <Footer />
     </div>
   );
 }
