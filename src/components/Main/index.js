@@ -8,7 +8,6 @@ import UserActionList from "../UserActionList";
 const Container = styled.main`
   display: flex;
   flex-direction: column;
-  padding: 0px 8px;
   margin: 0px auto 12px;
   width: 320px;
 `;
@@ -27,7 +26,7 @@ const SubtitleText = styled.h5`
 
 function Main() {
   return (
-    <Container>
+    <Container className="main">
       <SubtitleContainer>
         <SubtitleText>Entre na sua conta</SubtitleText>
       </SubtitleContainer>

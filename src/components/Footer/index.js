@@ -20,6 +20,13 @@ function Footer() {
       <div>
         <AtlassianLogo
           size="small"
+          className="hide-for-medium"
+          iconColor="rgb(94, 108, 132)"
+          textColor="rgb(66, 82, 110)"
+        />
+        <AtlassianLogo
+          className="hide-for-small"
+          size="medium"
           iconColor="rgb(94, 108, 132)"
           textColor="rgb(66, 82, 110)"
         />

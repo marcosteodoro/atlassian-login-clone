@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "@atlaskit/css-reset";
+import "./GlobalStyles.css";
 
 import Header from "../src/components/Header";
 import Main from "../src/components/Main";
