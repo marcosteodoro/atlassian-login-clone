@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Button from "@atlaskit/button";
 
 const StyledButton = styled(Button)`
-  cursor: pointer !important;
+  cursor: pointer;
   height: 40px !important;
   margin: ${(props) => props.margin ?? ""};
 `;
