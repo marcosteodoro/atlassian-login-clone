@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Textfield from "@atlaskit/textfield";
 
 import Button from "../Shared/Button";
+import UserActionList from "../UserActionList";
 
 const Container = styled.main`
   display: flex;
@@ -24,16 +25,6 @@ const SubtitleText = styled.h5`
   text-align: center;
 `;
 
-const StyledButton = styled(Button)`
-  cursor: pointer !important;
-  height: 40px !important;
-  margin: ${(props) => props.margin ?? ""};
-`;
-
-StyledButton.defaultProps = {
-  margin: "",
-};
-
 function Main() {
   return (
     <Container>
@@ -54,9 +45,9 @@ function Main() {
             fontSize: "inherit",
           }}
         >
-          <StyledButton appearance="primary" shouldFitContainer>
+          <Button appearance="primary" shouldFitContainer>
             Continuar
-          </StyledButton>
+          </Button>
         </div>
       </form>
       <div
@@ -76,51 +67,28 @@ function Main() {
           OU
         </span>
 
-        <StyledButton
+        <Button
           shouldFitContainer
           margin="16px 0px"
         >
           Continuar com o Google
-        </StyledButton>
+        </Button>
 
-        <StyledButton
+        <Button
           shouldFitContainer
           margin="0px 0px 16px 0px"
         >
           Continuar com a conta da Microsoft
-        </StyledButton>
+        </Button>
 
-        <StyledButton
+        <Button
           shouldFitContainer
           margin="0px 0px 16px 0px"
         >
           Continuar com a conta da Apple
-        </StyledButton>
+        </Button>
       </div>
-      <div
-        style={{
-          borderTop: "1px solid rgb(213, 216, 222)",
-          marginTop: "16px",
-          paddingTop: "16px",
-        }}
-      >
-        <ul
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            listStyle: "outside none none",
-            padding: "0px",
-            alignItems: "center",
-          }}
-        >
-          <li>
-            <Button appearance="link">Não consegue entrar?</Button>
-          </li>
-          <li>
-            <Button appearance="link">Criar uma conta</Button>
-          </li>
-        </ul>
-      </div>
+      <UserActionList />
     </Container>
   );
 }
