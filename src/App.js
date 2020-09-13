@@ -5,7 +5,7 @@ import "@atlaskit/css-reset";
 import Header from "../src/components/Header";
 import Main from "../src/components/Main";
 import Footer from "../src/components/Footer";
-import Button from "../src/components/Shared/Button";
+import UserInfoList from "./components/UserInfoList";
 
 const Container = styled.div`
   display: flex;
@@ -20,35 +20,7 @@ export default () => {
       <div>
         <Header />
         <Main />
-
-        <ul
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            listStyle: "outside none none",
-            padding: "0px",
-            alignItems: "center",
-          }}
-        >
-          <li>
-            <Button
-              style={{ fontSize: "12px" }}
-              appearance="link"
-              spacing="compact"
-            >
-              Política de Privacidade
-            </Button>
-          </li>
-          <li>
-            <Button
-              style={{ fontSize: "12px" }}
-              appearance="link"
-              spacing="compact"
-            >
-              Aviso ao usuário
-            </Button>
-          </li>
-        </ul>
+        <UserInfoList />
       </div>
       <Footer />
     </Container>
